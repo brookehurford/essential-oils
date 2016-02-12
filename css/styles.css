@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 body {
   margin: 0px;
   font-family: 'Roboto', sans-serif;
@@ -38,13 +46,20 @@ p {
   font-size: 66px;
   font-weight: normal;
   margin-top: 0;
+  text-shadow: 1px 1px 1px white;
 }
 
 .tagline h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   font-size: 30px;
+  text-shadow: 1px 1px 1px white;
+  width: 60%;
+  line-height: 45px;
 }
+
+/* Summary Section Content
+============================*/
 
 #summary {
   background-image: url("../img/oils.jpg");
@@ -55,7 +70,7 @@ p {
 
 #summary h2 {
   margin-top: 0;
-  padding-top: 150px;
+  padding-top: 70px;
 }
 
 .transparent {
@@ -72,20 +87,24 @@ p {
   width: 50%;
 }
 
-.summaryBlock1 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 24%;
-  float: left;
-  padding-left: 370px;
+a {
+  background-color: #794A86;
+  color: white;
+  display: block;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 1.2em;
+  border: 2px solid #794A86;
+  border-radius: 100px;
+  margin-top: 30px;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+  text-decoration: none;
 }
 
-.summaryBlock2 {
-  margin-left: auto;
-  margin-right: auto;
-  width: 24%;
-  float: left;
-  padding-left: 15px;
+a:hover {
+  background-color: white;
+  color: #794A86;
 }
 
 /* Table
@@ -108,7 +127,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   border: 2px solid lightgrey;
-  box-shadow:
+  box-shadow: 2px 3px 2px #E0E0E0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 img {
@@ -121,12 +142,13 @@ img {
 }
 
 tbody tr td {
-  width: 150px;
+  width: 120px;
 }
 
 #table p {
   text-align: center;
   font-size: 12px;
+  text-shadow: 1px 1px 1px white;
 }
 
 tbody tr th {
@@ -210,10 +232,40 @@ th:hover::after {
 ===================*/
 
 #gallery {
-  width: 95%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  width: 100%;
+  padding-left: 150px;
+}
+
+#accessories{
+  padding-top: 50px;
+  width: 100%;
+}
+
+#accessories h1 {
+  text-align: center;
 }
 
 .galleryImg {
   float: left;
-  max-width: 33%;
+  max-width: 300px;
+  margin: 20px 20px 0px 20px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 3px 2px #E0E0E0;
+}
+
+/* Footer
+===================*/
+
+#footer {
+  padding-top: 50px;
+}
+
+#footer p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
