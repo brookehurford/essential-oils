@@ -264,60 +264,7 @@ th:hover::after {
   margin-right: auto;
   overflow: auto;
   width: 100%;
-  /*padding-left: 150px;*/
-}
-
-.galleryImg {
-  float: left;
-  max-width: 300px;
-  margin: 20px 20px 0px 20px;
-  border: 2px solid lightgrey;
-  box-shadow: 2px 3px 2px #E0E0E0;
-}
-
-@-webkit-keyframes hvr-push {
-  50% {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@keyframes hvr-push {
-  50% {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-.hvr-push {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-}
-.hvr-push:hover, .hvr-push:focus, .hvr-push:active {
-  -webkit-animation-name: hvr-push;
-  animation-name: hvr-push;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+  padding-left: 150px;
 }
 
 /* Footer
@@ -329,54 +276,26 @@ th:hover::after {
   text-align: center;
 }
 
-/* TEST GALLERY STUFF
+/* Image Gallery with Hovers
 ===================*/
 
+/* ---- Dewdrop ----*/
+
 .dewdrop {
-  border: 1px solid red;
   overflow: auto;
   float: left;
   width: 33%;
-  overflow-x: hidden;
   height: 400px;
   width: 400px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 3px 2px #E0E0E0;
 }
-/*
-.dewdrop img {
-  margin: 0px 0px 0px 0px;
-  margin-right: -20px;
-  min-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}*/
-
-.text {
-  color: white;
-  font-size: 26px;
-  position:relative;
-  top:150px;
-  left:90px;
-  visibility:hidden;
-}
-
-.dewdrop:hover .text {
-visibility:visible;
-}
-
-/* Transparent layer on hover
-===================*/
 
 .dewdrop {
     position: relative;
+    background-image: url("../img/dewdrop.jpg");
     width: 400px;
     height: 400px;
-}
-
-.dewdrop img {
-    width: 100%;
-    vertical-align: top;
-    padding: 0px 0px 0px 0px;
-    border: 1px solid blue;
 }
 
 .dewdrop:before {
@@ -390,16 +309,6 @@ visibility:visible;
     -webkit-transition: all 1s;
 }
 
-.dewdrop:hover:after {
-  content: "The Dewdrop Diffuser";
-  color: white;
-  position: absolute;
-  top: 200px;
-  left: 50px;
-  font-size: 2em;
-  text-align: center;
-}
-
 .dewdrop:hover:before {
   color: white;
   opacity: 1;
@@ -407,8 +316,252 @@ visibility:visible;
   vertical-align: middle
 }
 
-/* Background images for gallery*/
+.dewdrop:hover:after {
+  content: "The Dewdrop Diffuser";
+  color: white;
+  position: absolute;
+  top: 170px;
+  left: 50px;
+  font-size: 2em;
+  text-align: center;
+}
 
-.dewdrop {
-  background-image: url("../img/dewdrop.jpg");
+/* ---- Small Bottles ----*/
+
+.bottles {
+  overflow: auto;
+  float: left;
+  width: 33%;
+  height: 400px;
+  width: 400px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 3px 2px #E0E0E0;
+}
+
+.bottles {
+    position: relative;
+    background-image: url("../img/small-bottles.jpg");
+    width: 400px;
+    height: 400px;
+}
+
+.bottles:before {
+    content: "";
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.bottles:hover:before {
+  color: white;
+  opacity: 1;
+  text-align: center;
+  vertical-align: middle
+}
+
+.bottles:hover:after {
+  width: 80%;
+  content: "2oz Samples Bottles & Roller Top";
+  color: white;
+  position: absolute;
+  top: 170px;
+  left: 50px;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* ---- Sample Packets ----*/
+
+.packets {
+  overflow: auto;
+  float: left;
+  width: 33%;
+  height: 400px;
+  width: 400px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 3px 2px #E0E0E0;
+}
+
+.packets {
+    position: relative;
+    background-image: url("../img/sample-packets.jpg");
+    width: 400px;
+    height: 400px;
+}
+
+.packets:before {
+    content: "";
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.packets:hover:before {
+  color: white;
+  opacity: 1;
+  text-align: center;
+  vertical-align: middle
+}
+
+.packets:hover:after {
+  width: 80%;
+  content: "4oz Sample Packets";
+  color: white;
+  position: absolute;
+  top: 170px;
+  left: 50px;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* ---- Ningxia Red Packets ----*/
+
+.red {
+  overflow: auto;
+  float: left;
+  width: 33%;
+  height: 400px;
+  width: 400px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 3px 2px #E0E0E0;
+}
+
+.red {
+    position: relative;
+    background-image: url("../img/red.jpg");
+    width: 400px;
+    height: 400px;
+}
+
+.red:before {
+    content: "";
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.red:hover:before {
+  color: white;
+  opacity: 1;
+  text-align: center;
+  vertical-align: middle
+}
+
+.red:hover:after {
+  width: 80%;
+  content: "Samples of Ningxia Red";
+  color: white;
+  position: absolute;
+  top: 170px;
+  left: 40px;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* ---- Magazines ----*/
+
+.magazines {
+  overflow: auto;
+  float: left;
+  width: 33%;
+  height: 400px;
+  width: 400px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 3px 2px #E0E0E0;
+}
+
+.magazines {
+    position: relative;
+    background-image: url("../img/magazines.jpg");
+    width: 400px;
+    height: 400px;
+}
+
+.magazines:before {
+    content: "";
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.magazines:hover:before {
+  color: white;
+  opacity: 1;
+  text-align: center;
+  vertical-align: middle
+}
+
+.magazines:hover:after {
+  width: 80%;
+  content: "Literature to Help You Learn About Oils";
+  color: white;
+  position: absolute;
+  top: 170px;
+  left: 40px;
+  font-size: 2em;
+  text-align: center;
+}
+
+/* ---- Happy Oiler ----*/
+
+.happyoiler {
+  overflow: auto;
+  float: left;
+  width: 33%;
+  height: 400px;
+  width: 400px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 3px 2px #E0E0E0;
+}
+
+.happyoiler {
+    position: relative;
+    background-image: url("../img/happyoiler.jpg");
+    width: 400px;
+    height: 400px;
+}
+
+.happyoiler:before {
+    content: "";
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.happyoiler:hover:before {
+  color: white;
+  opacity: 1;
+  text-align: center;
+  vertical-align: middle
+}
+
+.happyoiler:hover:after {
+  width: 80%;
+  content: "Join a Community of Fellow Oilers";
+  color: white;
+  position: absolute;
+  top: 170px;
+  left: 40px;
+  font-size: 2em;
+  text-align: center;
 }
