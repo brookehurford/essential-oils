@@ -254,7 +254,7 @@ th:hover::after {
   padding-top: 25px;
   padding-bottom: 50px;
   width: 100%;
-  background-color: #E0E0E0;
+  background-color: rgba(0, 0,0, 0.1);
 }
 
 #accessories h1 {
@@ -278,21 +278,31 @@ th:hover::after {
   box-shadow: 2px 3px 2px #E0E0E0;
 }
 
-@-webkit-keyframes hvr-pop {
+@-webkit-keyframes hvr-push {
   50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
-@keyframes hvr-pop {
+@keyframes hvr-push {
   50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
 }
 
-.hvr-pop {
+.hvr-push {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -302,9 +312,9 @@ th:hover::after {
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
 }
-.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
-  -webkit-animation-name: hvr-pop;
-  animation-name: hvr-pop;
+.hvr-push:hover, .hvr-push:focus, .hvr-push:active {
+  -webkit-animation-name: hvr-push;
+  animation-name: hvr-push;
   -webkit-animation-duration: 0.3s;
   animation-duration: 0.3s;
   -webkit-animation-timing-function: linear;
