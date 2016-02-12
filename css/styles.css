@@ -96,7 +96,11 @@ p {
   margin-right: auto;
 }
 
-#table h1, h2 {
+#table {
+  padding-top: 25px;
+}
+
+#table h1, h3 {
   text-align: center;
 }
 
@@ -200,4 +204,16 @@ thead th:not(:empty):focus::after {
 td:hover::after,
 th:hover::after {
   background-color: #E0E0E0;
+}
+
+/* Image Gallery
+===================*/
+
+#gallery {
+  width: 95%;
+}
+
+.galleryImg {
+  float: left;
+  max-width: 33%;
 }
