@@ -26,6 +26,10 @@ p {
   font-size: 18px;
 }
 
+hr {
+  margin-top: 0;
+}
+
 #header {
   background-image: url("../img/bamboo-top.png");
   height: 800px;
@@ -241,8 +245,21 @@ th:hover::after {
   background-color: #E0E0E0;
 }
 
-/* Image Gallery
+/* Accessories Section with Image Gallery
 ===================*/
+
+#accessories{
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  width: 100%;
+  background-color: #E0E0E0;
+}
+
+#accessories h1 {
+  text-align: center;
+}
 
 #gallery {
   display: block;
@@ -251,15 +268,6 @@ th:hover::after {
   overflow: auto;
   width: 100%;
   padding-left: 150px;
-}
-
-#accessories{
-  padding-top: 50px;
-  width: 100%;
-}
-
-#accessories h1 {
-  text-align: center;
 }
 
 .galleryImg {
@@ -307,10 +315,6 @@ th:hover::after {
 
 /* Footer
 ===================*/
-
-#footer {
-  margin-top: 50px;
-}
 
 #footer p {
   padding-top: 30px;
