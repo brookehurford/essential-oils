@@ -1,0 +1,42 @@
+body {
+  margin: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+#header {
+  background-image: url("../img/bamboo-top.png");
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+}
+
+.tagline {
+  color: white;
+  position:absolute;
+  top: 340px;
+  left: 50px;
+}
+
+.tagline h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 50px;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.tagline h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.summaryBlock1 {
+  float: right;
+  border: 1px solid red;
+}
