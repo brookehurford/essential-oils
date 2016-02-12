@@ -1,11 +1,21 @@
 body {
   margin: 0px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
 }
 
 h2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+p {
+  letter-spacing: .03em;
+  line-height: 25px;
+  font-size: 18px;
 }
 
 #header {
@@ -23,20 +33,171 @@ h2 {
 }
 
 .tagline h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: normal;
-  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 66px;
   font-weight: normal;
   margin-top: 0;
 }
 
 .tagline h2 {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
   font-size: 30px;
 }
 
+#summary {
+  background-image: url("../img/oils.jpg");
+  width: 100%;
+  height: 600px;
+  overflow: auto;
+}
+
+#summary h2 {
+  margin-top: 0;
+  padding-top: 150px;
+}
+
+.transparent {
+  content: " ";
+  z-index: 10;
+  display: block;
+  height: 600px;
+  background: rgba(255,255,255, 0.7);
+}
+
+.summaryCenter {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .summaryBlock1 {
-  float: right;
-  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+  width: 24%;
+  float: left;
+  padding-left: 370px;
+}
+
+.summaryBlock2 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 24%;
+  float: left;
+  padding-left: 15px;
+}
+
+/* Table
+=================*/
+
+#youngLivingOils {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#table h1, h2 {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 2px solid lightgrey;
+  box-shadow:
+}
+
+img {
+  max-width: 70px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+tbody tr td {
+  width: 150px;
+}
+
+#table p {
+  text-align: center;
+  font-size: 12px;
+}
+
+tbody tr th {
+  text-shadow: 0 2px 2px white;
+}
+
+.redBrown {
+  background-color: #884240;
+  height: 30px;
+  margin: 5px;
+}
+
+.purple {
+  background-color: #7d5287;
+  height: 30px;
+  margin: 5px;
+}
+.teal {
+  background-color: #2ba87e;
+  height: 30px;
+  margin: 5px;
+}
+.red {
+  background-color: #da2433;
+  height: 30px;
+  margin: 5px;
+}
+.orange {
+  background-color: #ff8b5f;
+  height: 30px;
+  margin: 5px;
+}
+.deepPink {
+  background-color: #de3759;
+  height: 30px;
+  margin: 5px;
+}
+.green {
+  background-color: #68a854;
+  height: 30px;
+  margin: 5px;
+}
+.darkRed {
+  background-color: #9e333b;
+  height: 30px;
+  margin: 5px;
+}
+
+table {
+  overflow: hidden;
+}
+
+td, th {
+  padding: 10px;
+  position: relative;
+  outline: 0;
+}
+
+/* Table hover effects
+=============*/
+
+td:hover::after,
+thead th:not(:empty):hover::after,
+td:focus::after,
+thead th:not(:empty):focus::after {
+  content: '';
+  height: 10000px;
+  left: 0;
+  position: absolute;
+  top: -5000px;
+  width: 100%;
+  z-index: -1;
+}
+
+td:hover::after,
+th:hover::after {
+  background-color: #E0E0E0;
 }
