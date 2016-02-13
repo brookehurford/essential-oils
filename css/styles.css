@@ -30,6 +30,9 @@ hr {
   margin-top: 0;
 }
 
+/* Header Content
+====================*/
+
 #header {
   background-image: url("../img/bamboo-top.png");
   height: 800px;
@@ -125,7 +128,7 @@ hr {
   transform: scale(1.1);
 }
 
-/* Table
+/* Oils section and Table Content
 =================*/
 
 #youngLivingOils {
@@ -224,8 +227,7 @@ td, th {
   margin: 5px;
 }
 
-/* Table hover effects
-=============*/
+/* ---- Table Hover Effects ----*/
 
 td:hover::after, th:hover::after {
   content: '';
@@ -250,7 +252,6 @@ th:hover::after {
   margin-bottom: 0;
   padding-top: 25px;
   padding-bottom: 50px;
-  width: 100%;
   background-color: rgba(0, 0,0, 0.1);
 }
 
@@ -259,21 +260,9 @@ th:hover::after {
 }
 
 #gallery {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   overflow: auto;
-  width: 100%;
-  padding-left: 150px;
-}
-
-/* Footer
-===================*/
-
-#footer p {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
+  padding-left: 75px;
 }
 
 /* Image Gallery with Hovers
@@ -289,6 +278,7 @@ th:hover::after {
   width: 400px;
   border: 2px solid lightgrey;
   box-shadow: 2px 3px 2px #E0E0E0;
+  margin: 20px;
 }
 
 .dewdrop {
@@ -336,6 +326,7 @@ th:hover::after {
   width: 400px;
   border: 2px solid lightgrey;
   box-shadow: 2px 3px 2px #E0E0E0;
+  margin: 20px;
 }
 
 .bottles {
@@ -384,6 +375,7 @@ th:hover::after {
   width: 400px;
   border: 2px solid lightgrey;
   box-shadow: 2px 3px 2px #E0E0E0;
+  margin: 20px;
 }
 
 .packets {
@@ -432,6 +424,7 @@ th:hover::after {
   width: 400px;
   border: 2px solid lightgrey;
   box-shadow: 2px 3px 2px #E0E0E0;
+  margin: 20px;
 }
 
 .red {
@@ -480,6 +473,7 @@ th:hover::after {
   width: 400px;
   border: 2px solid lightgrey;
   box-shadow: 2px 3px 2px #E0E0E0;
+  margin: 20px;
 }
 
 .magazines {
@@ -528,6 +522,7 @@ th:hover::after {
   width: 400px;
   border: 2px solid lightgrey;
   box-shadow: 2px 3px 2px #E0E0E0;
+  margin: 20px;
 }
 
 .happyoiler {
@@ -564,4 +559,40 @@ th:hover::after {
   left: 40px;
   font-size: 2em;
   text-align: center;
+}
+
+
+/* Footer
+===================*/
+
+#footer {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#footer p {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+#footer a {
+  text-decoration: none;
+  border: 2px solid #794A86;
+  background-color: #794A86;
+  color: white;
+  padding: 10px 20px 10px 20px;
+}
+
+#footer a:hover {
+  border: 2px solid #794A86;
+  background-color: white;
+  color: #794A86;
+  padding: 10px 20px 10px 20px;
+}
+
+#footer img {
+  position: relative;
+  left: 250px;
+  bottom: 75px;
+  transform: rotate(15deg);
 }
